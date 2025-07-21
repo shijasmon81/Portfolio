@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shijasmon H</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">SHIJASMON H</div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="moon-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-art-bg" aria-hidden="true">
+                <svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="blobGradient1" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6366f1"/>
+                      <stop offset="1" stop-color="#818cf8"/>
+                    </linearGradient>
+                    <radialGradient id="blobGradient2" cx="0.7" cy="0.3" r="1">
+                      <stop offset="0%" stop-color="#a5b4fc" stop-opacity="0.7"/>
+                      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+                    </radialGradient>
+                    <linearGradient id="blobGradient3" x1="0" y1="800" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#f472b6"/>
+                      <stop offset="1" stop-color="#818cf8"/>
+                    </linearGradient>
+                  </defs>
+                  <!-- Main animated blob -->
+                  <path fill="url(#blobGradient1)" fill-opacity="0.33">
+                    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+                      values="
+                        M 700 200 Q 900 100 1000 300 Q 1100 500 900 600 Q 700 700 500 600 Q 300 500 400 300 Q 500 100 700 200 Z;
+                        M 750 250 Q 950 150 1050 350 Q 1150 550 950 650 Q 750 750 550 650 Q 350 550 450 350 Q 550 150 750 250 Z;
+                        M 700 200 Q 900 100 1000 300 Q 1100 500 900 600 Q 700 700 500 600 Q 300 500 400 300 Q 500 100 700 200 Z
+                      "
+                    />
+                  </path>
+                  <!-- Secondary animated blob -->
+                  <path fill="url(#blobGradient2)" fill-opacity="0.28">
+                    <animate attributeName="d" dur="5s" repeatCount="indefinite"
+                      values="
+                        M 400 400 Q 500 300 700 400 Q 900 500 700 600 Q 500 700 400 600 Q 300 500 400 400 Z;
+                        M 420 420 Q 520 320 720 420 Q 920 520 720 620 Q 520 720 420 620 Q 320 520 420 420 Z;
+                        M 400 400 Q 500 300 700 400 Q 900 500 700 600 Q 500 700 400 600 Q 300 500 400 400 Z
+                      "
+                    />
+                  </path>
+                  <!-- Accent static blob -->
+                  <ellipse cx="300" cy="200" rx="180" ry="120" fill="url(#blobGradient3)" fill-opacity="0.13"/>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <img src="./image/IMG_20250526_100006_482.webp" alt="Avatar" class="hero-avatar"/>
+                <h1>SHIJASMON H</h1>
+                <p class="hero-subtitle">Full-Stack Developer</p>
+                <p class="hero-description">
+                    <span id="typed"></span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="mailto:shijasmonh@gmail.com" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>About</h2>
+                        <p>
+                            I'm Shijasmon H, a passionate software engineer currently working as an Assistant Systems Engineer at Tata Consultancy Services (TCS), Mumbai.
+                            I specialize in Full Stack Web Development, Artificial Intelligence, and Machine Learning, and have hands-on experience in building scalable, secure, and efficient digital solutions.
+                        </p>
+                        <p>
+                            With a strong foundation in both frontend and backend technologies, I’ve developed and deployed several full-stack applications using tools like  Node.js, Flask, Django, and MongoDB. 
+                            Technically skilled in Python, JavaScript, SQL, and various frameworks, I’m equally comfortable working on user interfaces, server-side logic, and database integration. I follow Agile development practices and write clean, maintainable, and well-tested code.
+                        </p>
+                        <p>
+                            I’m driven by a continuous desire to learn and innovate, and I thrive in environments that challenge me to push boundaries and build impactful solutions.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Java</div>
+                            <div class="skill-item">C</div>
+                            <div class="skill-item">C++</div>  
+                            <div class="skill-item">php</div>
+                            <div class="skill-item">.Net</div>
+                            <div class="skill-item">AI/ML</div>
+                            <div class="skill-item">TensorFlow</div>
+                            <div class="skill-item">PyTorch</div>
+                            <div class="skill-item">OpenCV</div>
+                            <div class="skill-item">NumPy</div>
+                            <div class="skill-item">Pandas</div>
+                            <div class="skill-item">Keras</div>
+                            <div class="skill-item">CNN</div>
+                            <div class="skill-item">Django</div>    
+                            <div class="skill-item">Flask</div>
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">Bootstrap</div>
+                            <div class="skill-item">Next.js</div>
+                            <div class="skill-item">MongoDB</div>
+                            <div class="skill-item">MySql</div>      
+                            <div class="skill-item">Docker</div>
+                            <div class="skill-item">Kubernetes</div>        
+                            <div class="skill-item">REST APIs</div>
+                            <d iv class="skill-item">JavaScript</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">SQL</div>
+                            <div class="skill-item">AWS</div>
+                            <div class="skill-item">Git</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./image/centre-for-ageing-better-ZlOlRnWk8zU-unsplash.jpg" alt="Shop Inventory" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Shop Inventory Web-App</h3>
+                            <p>Shop Inventory Web Application The Shop Inventory Web Application is a full-stack web-based solution designed to help retailers and store owners efficiently manage their product inventory. Built using Node.js for the backend and MongoDB as the database, the application provides a seamless interface for performing CRUD (Create, Read, Update, Delete).</p>
+                            <p class="project-tech"> Node.js • MongoDB</p>
+                            <a href="https://github.com/shijasmon81/Shop-Inventory-Web-Application" class="btn btn-outline btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./image/evangeline-shaw-VLkoOabAxqw-unsplash.jpg" alt="Job Point" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Job point Web-App </h3>
+                            <p>A dynamic job portal that aggregates listings from multiple sites via web scraping, allows companies to post jobs, placement officers to share campus drives, and students to view and search all job opportunities in one centralized platform.</p>
+                            <p class="project-tech">Python • Flask • MongoDB • Web Scraping • HTML • CSS • JavaScript • Beutifulsoap</p>
+                            <a href="https://github.com/shijasmon81/Job-point" class="btn btn-outline btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./image/pop-zebra-NZ-9RqsE06I-unsplash.jpg" alt="Digit Recognizer" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Digit Recognizer</h3>
+                            <p>Digit Recognizer is a machine learning application that identifies handwritten digits (0–9) from input images. It uses Convolutional Neural Networks (CNNs) to analyse image patterns and predict the digit with high accuracy. In this project,
+                               the model was trained from scratch using labelled datasets and enhanced using NLP techniques (for preprocessing or user
+                               interaction parsing).
+                            </p>
+                            <p class="project-tech">CNN • NLP • Django • Python • SQLLite  </p>
+                            <a href="#" class="btn btn-outline btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Get In Touch</h2>
+                    <p>
+                        I'm always open to discussing new opportunities and interesting projects.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="shijasmonh@gmail.com" class="btn btn-primary">Send Email</a>
+                        <a href="https://www.linkedin.com/in/shijasmon-h-26533918b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+                        <a href="https://github.com/shijasmon81" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                    </div>
+                    <p class="copyright">© 2025 Shijasmon</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+</body>
+</html>
